@@ -1,4 +1,6 @@
-﻿  main.c
+﻿  functions.c
+C:\Users\panga\Documents\GitHub\weather-station-gui\raylib-game-template-main\src\functions.c(45,6): warning C4013: 'chdir' undefined; assuming extern returning int
+  main.c
 C:\Users\panga\Documents\GitHub\weather-station-gui\raylib-game-template-main\src\main.c(113,24): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
 C:\Users\panga\Documents\GitHub\weather-station-gui\raylib-game-template-main\src\main.c(113,36): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
 C:\Users\panga\Documents\GitHub\weather-station-gui\raylib-game-template-main\src\main.c(114,24): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
@@ -30,5 +32,5 @@ C:\Users\panga\Documents\GitHub\weather-station-gui\raylib-game-template-main\sr
 C:\Users\panga\Documents\GitHub\weather-station-gui\raylib-game-template-main\src\main.c(189,101): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
 C:\Users\panga\Documents\GitHub\weather-station-gui\raylib-game-template-main\src\main.c(189,137): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
 C:\Users\panga\Documents\GitHub\weather-station-gui\raylib-game-template-main\src\main.c(153,49): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  LINK : C:\Users\panga\Documents\GitHub\weather-station-gui\raylib-game-template-main\projects\VS2022\\build\raylib_game\bin\x64\Debug\raylib_game.exe not found or not built by the last incremental link; performing full link
+  Generating Code...
   raylib_game.vcxproj -> C:\Users\panga\Documents\GitHub\weather-station-gui\raylib-game-template-main\projects\VS2022\build\raylib_game\bin\x64\Debug\raylib_game.exe

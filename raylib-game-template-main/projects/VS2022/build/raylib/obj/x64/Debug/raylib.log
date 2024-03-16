@@ -1,14 +1,1 @@
-﻿  raudio.c
-  rcore.c
-  rmodels.c
-C:\Users\panga\Documents\GitHub\weather-station-gui\raylib\src\external\rprand.h(205,27): warning C4018: '<': signed/unsigned mismatch
-  (compiling source file '../../../../raylib/src/rcore.c')
-  
-C:\Users\panga\Documents\GitHub\weather-station-gui\raylib\src\rmodels.c(5371,30): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  rglfw.c
-  rshapes.c
-  rtext.c
-  rtextures.c
-  utils.c
-  Generating Code...
-  raylib.vcxproj -> C:\Users\panga\Documents\GitHub\weather-station-gui\raylib-game-template-main\projects\VS2022\build\raylib\bin\x64\Debug\raylib.lib
+﻿  raylib.vcxproj -> C:\Users\panga\Documents\GitHub\weather-station-gui\raylib-game-template-main\projects\VS2022\build\raylib\bin\x64\Debug\raylib.lib

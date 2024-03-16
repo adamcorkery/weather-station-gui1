@@ -1,7 +1,5 @@
-// literaly just a test to test the beta branch
-
-
 #include "raylib.h"
+#include "functions.h"
 #define temp_count 10
 #define max_temp 100
 typedef float angle;
@@ -32,7 +30,6 @@ int main(void)
         // Initialization
        //------------------------------------------------------------------------------------
 
-
     const int screenWidth = 1920;
     const int screenHeight = 1080;
     int x = 0;
@@ -43,10 +40,10 @@ int main(void)
     Rectangle temp_grapharea = {180,100,800,400};
     Vector2 wind_grapharea = {1500,300};
     
-
+    SetDir();
 
     InitWindow(screenWidth, screenHeight, "weather station GUI");
-    Texture2D texture = LoadTexture("C:\\WORKSHOP\\SHELF\\game dev projects\\project 2 gui\\raylib template\\raylib-game-template-main\\raylib-game-template-main\\src\\textures\\TUS-logo-909091323.png");
+    Texture2D texture = LoadTexture("..\\..\\..\\..\\..\\..\\..\\src\\textures\\TUS-logo-909091323.png");
 
     SetTargetFPS(60);               // Set our game to run at 60 frames-per-second
 

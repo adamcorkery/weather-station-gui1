@@ -4,6 +4,12 @@
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{0981CA98-E4A5-4DF1-987F-A41D09131EFC}|raylib_game\\raylib_game.vcxproj|C:\\Users\\panga\\Documents\\GitHub\\weather-station-gui\\raylib-game-template-main\\src\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0981CA98-E4A5-4DF1-987F-A41D09131EFC}|raylib_game\\raylib_game.vcxproj|C:\\Users\\panga\\Documents\\GitHub\\weather-station-gui\\raylib-game-template-main\\src\\functions.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0981CA98-E4A5-4DF1-987F-A41D09131EFC}|raylib_game\\raylib_game.vcxproj|C:\\Users\\panga\\Documents\\GitHub\\weather-station-gui\\raylib-game-template-main\\src\\functions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,17 +19,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "functions.c",
+              "DocumentMoniker": "C:\\Users\\panga\\Documents\\GitHub\\weather-station-gui\\raylib-game-template-main\\src\\functions.c",
+              "RelativeDocumentMoniker": "..\\..\\src\\functions.c",
+              "ToolTip": "C:\\Users\\panga\\Documents\\GitHub\\weather-station-gui\\raylib-game-template-main\\src\\functions.c*",
+              "RelativeToolTip": "..\\..\\src\\functions.c*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-03-16T16:56:46.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "functions.h",
+              "DocumentMoniker": "C:\\Users\\panga\\Documents\\GitHub\\weather-station-gui\\raylib-game-template-main\\src\\functions.h",
+              "RelativeDocumentMoniker": "..\\..\\src\\functions.h",
+              "ToolTip": "C:\\Users\\panga\\Documents\\GitHub\\weather-station-gui\\raylib-game-template-main\\src\\functions.h",
+              "RelativeToolTip": "..\\..\\src\\functions.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-16T16:52:12.638Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.c",
               "DocumentMoniker": "C:\\Users\\panga\\Documents\\GitHub\\weather-station-gui\\raylib-game-template-main\\src\\main.c",
               "RelativeDocumentMoniker": "..\\..\\src\\main.c",
-              "ToolTip": "C:\\Users\\panga\\Documents\\GitHub\\weather-station-gui\\raylib-game-template-main\\src\\main.c",
-              "RelativeToolTip": "..\\..\\src\\main.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAvAAAA",
+              "ToolTip": "C:\\Users\\panga\\Documents\\GitHub\\weather-station-gui\\raylib-game-template-main\\src\\main.c*",
+              "RelativeToolTip": "..\\..\\src\\main.c*",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAC0AAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-03-16T14:42:50.93Z",
               "EditorCaption": ""
