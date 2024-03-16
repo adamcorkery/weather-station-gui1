@@ -106,7 +106,6 @@ int main(void)
 
 
 
-
 void drawwinddirgraph(Vector2 position, float radius, angle direction, int pointerwith) {
 
     direction = direction - 90;
