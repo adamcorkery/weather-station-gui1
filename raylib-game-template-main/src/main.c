@@ -8,8 +8,9 @@ typedef float angle;
 // function definition
 //-------------------------------------------------------------------------------------------
 
-void drawtempgraph(const int* temperature, int count, Rectangle grapharea);
-void drawwinddirgraph(Vector2 position, float radius, angle direction, int pointerwith);
+void DrawTempGraph(const int* temperature, int count, Rectangle grapharea);
+void DrawWindDirGraph(Vector2 position, float radius, angle direction, int pointerwith);
+void DrawWindSpeedGraph(Rectangle grapharea, double windspeed, float border);
 
 //-------------------------------------------------------------------------------------------
 // global variables
@@ -37,8 +38,9 @@ int main(void)
 
     int temperature[temp_count] = {0,10,20,30,40,50,60,70,80,100};
 
+    Rectangle windspeed_grapharea = {450,800,1000,100};
     Rectangle temp_grapharea = {180,100,800,400};
-    Vector2 wind_grapharea = {1500,300};
+    Vector2 winddir_grapharea = {1500,300};
     
     SetDir();
 
@@ -61,9 +63,9 @@ int main(void)
         
         
         x++;
-        if (x == 60) {
+        if (x == 30) {
 
-            for (int i = temp_count; i > 0; i--) {
+            for (int i = temp_count-1; i > 0; i--) {
                
                 
                     temperature[i] = temperature[i - 1];
@@ -88,8 +90,9 @@ int main(void)
         ClearBackground(RAYWHITE);
 
         DrawTexture(texture, screenWidth / 2 - texture.width / 2, screenHeight / 2 - texture.height / 2, RAYWHITE);
-        drawtempgraph(temperature, temp_count, temp_grapharea);
-        drawwinddirgraph(wind_grapharea, 190, inputdir, 10);
+        DrawTempGraph(temperature, temp_count, temp_grapharea);
+        DrawWindDirGraph(winddir_grapharea, 190, inputdir, 10);
+        DrawWindSpeedGraph(windspeed_grapharea,100,20);
 
 
         EndDrawing();
@@ -104,9 +107,21 @@ int main(void)
 }
 
 
+//windspeed_grapharea
+
+void DrawWindSpeedGraph(Rectangle grapharea, double windspeed,float border) {
 
 
-void drawwinddirgraph(Vector2 position, float radius, angle direction, int pointerwith) {
+
+    DrawRectangle(grapharea.x - border/2, grapharea.y- border/2,grapharea.width+border,grapharea.height+border,BLUE);
+    DrawRectangleRec(grapharea, GRAY);
+    DrawText(TextFormat("%lf KM/H", windspeed),grapharea.x+5,grapharea.y,110,RED);
+
+
+}
+
+
+void DrawWindDirGraph(Vector2 position, float radius, angle direction, int pointerwith) {
 
     direction = direction - 90;
     DrawCircle(position.x, position.y, radius+10, DARKBLUE);
@@ -126,7 +141,7 @@ void drawwinddirgraph(Vector2 position, float radius, angle direction, int point
 
 
 
-void drawtempgraph(const int* temperature, int count, Rectangle grapharea)
+void DrawTempGraph(const int* temperature, int count, Rectangle grapharea)
 {
     float graphHeight = grapharea.height;
     float graphWith = grapharea.width;
@@ -169,6 +184,8 @@ void drawtempgraph(const int* temperature, int count, Rectangle grapharea)
             float x = grapharea.x + (withspaceing * (i)) -3;
             float y = grapharea.y + grapharea.height + fontsize;
 
+
+            DrawLine(grapharea.x + (withspaceing * (i)), grapharea.y, grapharea.x + (withspaceing * (i)), grapharea.y+graphHeight, BLACK );
             DrawText(TextFormat("%d",i ), x, y, fontsize, BLUE);
 
         }
@@ -177,6 +194,8 @@ void drawtempgraph(const int* temperature, int count, Rectangle grapharea)
             float x = grapharea.x-30;
             float y = grapharea.y - 10 + (graphHeight/count)*i;
 
+
+            DrawLine(grapharea.x,y+10, grapharea.x + graphWith, y+10, BLACK );
             DrawText(TextFormat("%d", (100-i*10)), x, y, fontsize, BLUE);
 
         }
